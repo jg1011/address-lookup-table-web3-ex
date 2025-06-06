@@ -96,7 +96,7 @@ async function confirmTransaction(
 // 4 - Create address lookup table
 
 async function createALT() {
-    // 4.1 - Get instruction and adress w/ builtin function
+    // 4.1 - Get instruction and address w/ builtin function
     const [lookupTableInst, lookupTableAddress] =
         AddressLookupTableProgram.createLookupTable({
             authority: SIGNER_WALLET.publicKey,
